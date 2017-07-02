@@ -1,5 +1,3 @@
-__author__ = "Harry"
-
 import numpy as np
 from sklearn import svm
 from sklearn.model_selection import train_test_split
@@ -20,7 +18,7 @@ def show_accuracy(a, b, tip):
 
 
 if __name__ == "__main__":
-    path = './data/iris.data'
+    path = '../data/iris.data'
     data = np.loadtxt(path, dtype=float, delimiter=',', converters={4: iris_type})
     x, y = np.split(data, (4,), axis=1)
     # here only choose sepal length and width as the features for visualization
